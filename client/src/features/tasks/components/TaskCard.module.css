@@ -1,0 +1,76 @@
+.container{
+  background:white;
+  padding:15px;
+  border-radius:10px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 40%;
+}
+
+.task-complete-checkbox {
+  margin: 10px;
+  transform: scale(1.4);
+}
+
+.completed-task {
+    background-color: green;
+}
+
+.task-title {
+  margin: 0;
+  font-size: 25px;
+}
+
+.task-description {
+  margin: 0;
+  font-size: 15px;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.taskcard-input{
+  padding:10px;
+  margin-right:8px;
+  border-radius:6px;
+  border:1px solid #ccc;
+}
+
+.taskcard-button{
+  padding:7px 7px;
+  border:none;
+  border-radius:6px;
+  color:white;
+  cursor:pointer;
+}
+
+.edit:hover{
+  background:#43a047;
+}
+
+.task-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.task-icons {
+  margin-left: auto;
+}
+
+.edit {
+  background-color: #4CAF51;
+  margin: 5px;
+}
+
+.delete {
+  background-color: red;
+  margin: 5px;
+}
+
+.delete::hover {
+  background-color: #F00000;
+}

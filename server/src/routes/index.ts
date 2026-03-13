@@ -1,12 +1,11 @@
-import { Router, Request, Response } from "express";
+import { Router } from "express";
+
 import authRoutes from "./auth.routes";
+import taskRoutes from "../routes/tasks.routes";
 
 const router = Router();
 
-router.get('/', (req: Request, res: Response) => {
-  res.json({ message: "API is running" });
-});
-
 router.use('/auth', authRoutes);
+router.use('/tasks', taskRoutes);
 
 export default router;
